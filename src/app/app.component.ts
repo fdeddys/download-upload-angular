@@ -36,6 +36,18 @@ export class AppComponent  {
 //       console.log(error);
 //     });
 // }
+
+  loadImg() {
+    this.imgURL = 'http://localhost:8080/api/prevFile';
+
+    // this.http.get('http://localhost:8080/api/prevFile')
+    //   .subscribe(
+    //       data => this.imgURL = data.valueOf,
+    //       error => console.log(error)
+    //   );
+  }
+
+
   fileChange(event): void {
     const fileList: FileList = event.target.files;
 
